@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset = "UTF-8">
+            <title>Case Study</title>
+            <meta name="viewport" content="width=device-width, initial-scale=1">
+            <link rel = 'stylesheet' href = 'style.css' type = 'text/css' media = 'all'>
+            <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600,700,900|Roboto+Condensed|Arimo|Montserrat|Lato|Poiret+One|Comfortaa|Merriweather:400,900|Martel:400,900' rel='stylesheet' type='text/css'>
+    </head>
+
+    <body>
+
+            <div id = "imageOne">
+                <img src = "1920.jpeg" alt = "photo of code">
+            </div>
+
+                <div id = "openTitle">
+
+                    <p>What if the shopping experience was personal?</p>
+
+                </div>
+
+                        <div id = "titleTwo" >
+                            <p>Like a chatbot.</p>
+
+                        </div>
+
+
+
+                                    <div id = "titleThree" >
+
+                                        <p>Buyers are unsure.</p>
+                                    </div>
+
+
+
+                                        <div id = "info" >
+
+                                            <p>And, tidious and complicated checkout forms can be costly for business.</p>
+
+                                        </div>
+
+
+                                                <div id = "form">
+                                                    <img src = "bill.png">
+
+                                                </div>
+                                                    <div id = "buttonOne">
+                                                        <p>></p>
+
+                                                    </div>
+
+                                                        <div id = "panelTwo">
+                                                        </div>
+
+                                                            <div id = "panelTwoText">
+
+                                                                <p>What if a chatbot guided the user through the checkout experience with 'Conversational UI'?</p>
+                                                            </div>
+
+                                                                    <div id = "oneScreen">
+                                                                        <img src = "screen1.png">
+
+                                                                    </div>
+
+                                                                        <div id = "twoScreen">
+                                                                            <img src = "screen2.png">
+                                                                        </div>
+
+                                                                            <div id = "threeScreen">
+                                                                                <img src = "screen3.png">
+                                                                            </div>
+
+                                                                                <div id = "fourScreen">
+                                                                                    <img src = "screen4.png">
+                                                                                </div>
+
+                                                                                    <div id = "fiveScreen">
+                                                                                        <img src = "screen5.png">
+
+                                                                                    </div>
+
+                                                                                        <div id = "sixScreen">
+                                                                                            <img src = "screen6.png">
+                                                                                        </div>
+
+                                                                                                <div id = "sevenScreen">
+                                                                                                    <img src = "screen7.png">
+                                                                                                </div>
+
+                                                                                                    <div id = "eightScreen">
+                                                                                                        <img src = "screen8.png">
+                                                                                                    </div>
+
+                                                                                                        <div id = "chatIcon">
+                                                                                                            <img src = "message.png">
+                                                                                                        </div>
+
+                                                                                                            <div id = "buttonTwo">
+                                                                                                                <p>></p>
+                                                                                                            </div>
+
+                                                                                                            <div id = "panelThree">
+                                                                                                                <p>The experience becomes Seamless and Engaging and Intuitive.</p>
+                                                                                                                    <div id = "panelThreeMoreText">
+                                                                                                                        <p>And, with the chatbot UI the online shopping experience becomes much more personal.</p>
+
+                                                                                                                    </div>
+
+                                                                                                            </div>
+                                                                                                            <div id = "talkingIcon">
+                                                                                                                <img src = "talking.png">
+
+                                                                                                            </div>
+
+                                                                                                                    <div id = "buttonThree">
+                                                                                                                        <p>></p>
+                                                                                                                    </div>
+
+
+
+        <footer>
+        </footer>
+        <header>
+            <div id = "topBar">
+                <p>Case Study by Cameron Priestley</p>
+            </div>
+        </header>
+
+
+
+
+    </body>
+
+    <script>
+
+
+    var move = (function(){
+
+            var image = document.getElementById("imageOne");
+            var panelTwo = document.getElementById("titleThree");
+            var panelThree = document.getElementById("panelTwo");
+            var panelFour = document.getElementById("panelThree");
+            var buttonOne = document.getElementById("buttonOne");
+            var panelTwoText = document.getElementById("panelTwoText");
+            var screenOne = document.getElementById("oneScreen");
+            var screenTwo = document.getElementById("twoScreen");
+            var screenThree = document.getElementById("threeScreen");
+            var screenFour = document.getElementById("fourScreen");
+            var screenFive = document.getElementById("fiveScreen");
+            var screenSix = document.getElementById("sixScreen");
+            var screenSeven = document.getElementById("sevenScreen");
+            var screenEight = document.getElementById("eightScreen");
+            var chatIcon = document.getElementById("chatIcon");
+            var buttonTwo = document.getElementById("buttonTwo");
+            var talkingIcon = document.getElementById("talkingIcon");
+            var buttonThree = document.getElementById("buttonThree");
+            var check;
+
+
+            var scroll = function(){
+
+                var lastScroll ;
+                var xPos = 0;
+                var yPos = 900;
+
+
+                    addEventListener("scroll", function(){
+
+                            if(lastScroll == true && document.body.scrollTop == 678){
+                                yPos = 0;
+                                xPOs = 0;
+
+                                        document.body.onscroll = function(){
+
+                                            window.scrollTo(xPos, yPos);
+                                            lastScroll = false;
+
+
+                                        }
+
+                            } else if(lastScroll == false && document.body.scrollTop == 0){
+                                yPos = 900;
+                                xPos = 0;
+
+                                        document.body.onscroll = function(){
+
+                                            window.scrollTo(xPos, yPos);
+                                            lastScroll = true;
+                                        }
+
+                                } else {
+
+                                    window.scrollTo(xPos, yPos);
+                                    lastScroll = true;
+                                }
+
+                        });
+            }
+
+
+            var buttonOneNext = function(){
+
+                buttonOne.onclick = function(){
+                    var screens = [screenOne, screenTwo, screenThree, screenFour, screenFive, screenSix, screenSeven, screenEight];
+
+                    panelThree.style.display = "inline";
+                    panelTwo.style.display = "none";
+                    panelTwoText.style.display = "inline";
+                    panelFour.style.display = "none";
+                    panelFour.getElementsByTagName('p')[0].style.display = "none";
+                    for(var x=0; x < screens.length; x++){
+
+                        screens[x].getElementsByTagName("img")[0].style.display = "inline";
+                    };
+
+                    // screenOne.getElementsByTagName('img')[0].style.display = "inline";
+                    // screenTwo.getElementsByTagName('img')[0].style.display = "inline";
+                    // screenThree.getElementsByTagName('img')[0].style.display = "inline";
+                    // screenFour.getElementsByTagName('img')[0].style.display = "inline";
+                    // screenFive.getElementsByTagName('img')[0].style.display = "inline";
+                    // screenSix.getElementsByTagName('img')[0].style.display = "inline";
+                    // screenSeven.getElementsByTagName('img')[0].style.display = "inline";
+                    // screenEight.getElementsByTagName('img')[0].style.display = "inline";
+                    // chatIcon.getElementsByTagName('img')[0].style.display = "inline";
+                    buttonTwo.style.display ="inline";
+
+                }
+
+
+
+            }
+
+            var buttonTwoNext = function(){
+                var screens = [screenOne, screenTwo, screenThree, screenFour, screenFive, screenSix, screenSeven, screenEight];
+                buttonTwo.onclick = function(){
+
+                    panelThree.style.display = "none";
+                    panelTwoText.style.display = "none";
+                    panelFour.style.display = "inline";
+                    panelFour.getElementsByTagName("p")[0].style.display = "inline";
+                    talkingIcon.style.display = "inline";
+                    buttonThree.style.display = "inline";
+                    buttonThree.getElementsByTagName("p")[0].style.display = "inline";
+                    buttonTwo.style.display = "none";
+                    buttonTwo.getElementsByTagName("p").style.display = "none";
+                        for(var x=0; x < screens.length; x++){
+
+                            screens[x].getElementsByTagName("img")[0].style.display = "none";
+                        };
+
+
+                }
+
+
+            }
+            var buttonThreeMove = function(){
+
+                buttonThree.onclick = function(){
+                    panelFour.style.display = "none";
+                    panelFour.getElementsByTagName("p")[0].style.display = "none";
+                    talkingIcon.style.display = "none";
+                    buttonThree.style.display = "none";
+                    buttonThree.getElementsByTagName('p')[0].style.display = "none";
+                    panelTwo.style.display = "inline";
+                    panelThree.style.display ="none";
+                    panelTwoText.style.display = "none";
+                    var screens = [screenOne, screenTwo, screenThree, screenFour, screenFive, screenSix, screenSeven, screenEight];
+
+                    for(var x=0; x < screens.length; x++){
+
+                        screens[x].getElementsByTagName("img")[0].style.display = "none";
+                    };
+
+
+                }
+            }
+            return{
+
+
+                movement: function(){
+                        scroll();
+                        buttonOneNext();
+                        buttonTwoNext();
+                        buttonThreeMove();
+
+
+
+
+
+                }
+
+
+            }
+
+
+
+
+    })();
+
+    move.movement();
+
+    </script>
+
+</html>
